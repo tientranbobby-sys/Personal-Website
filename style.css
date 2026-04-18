@@ -1,7 +1,10 @@
 #mainImg{
   width: 500px;
   height: 500px;
-  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; 
 }
 body {
   text-align: center;
