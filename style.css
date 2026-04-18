@@ -1,6 +1,7 @@
 #mainImg{
   width: 500px;
   height: 500px;
+  text-align: center;
 }
 body {
   text-align: center;
