@@ -7,3 +7,27 @@ body {
   background-color: #cce0ff;
 }
 
+#myCarousel {
+    width: 80%;
+    margin: auto;
+}
+
+/* Make all carousel images same size */
+#myCarousel .item img {
+    width: 100%;
+    height: 500px;      /* same height */
+    object-fit: cover;  /* fills evenly */
+    margin: auto;
+}
+
+/* Center captions */
+.carousel-caption {
+    left: 10%;
+    right: 10%;
+    bottom: 20px;
+}
+
+/* Optional: center whole carousel */
+#gadgets {
+    text-align: center;
+}
