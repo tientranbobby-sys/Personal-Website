@@ -1,93 +1,151 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Doraemon</title>
-    <link rel = "stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <nav class="navbar-inverse my_nav_bar">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </button>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <a class="navbar-brand">Tyler Creation</a>
-          <ul class="nav navbar-nav" id="menu">
-            <li><a href="#aboutme" id="about">About Me</a></li>
-            <li><a href="#gadgets" id="gadget">Cool Gadgets</a></li>
-            <li><a href="#videos" id="video">Learn More about Doraemon</a></li>
-            <li><a href="#footer" id="foot">Doraemon Merch!</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <img src="doraemon-iphone-j72lx9h98b21konn.jpg" id="mainImg">
-    <h1>Doraemon</h1>
 
-    <section id="aboutme">
-      <p>MS-903 "Doraemon", or simply Doraemon or Doraemon Nobi (ドラえもん Doraemon) is the titular deuteragonist of the Doraemon franchise. After being manufactured in a Factory in the 22nd century, he is sent back in time by his owner, Sewashi Nobi, to help his great-great-grandfather, Nobita Nobi, become a successful person and have a better future.
-    
-    Doraemon loves Dorayaki, plays with the other cats, and he has magical tools from the future that grants skills and ability that normal people won't be able to do.</p>
-    </section>
-    
-    <section id="gadgets">
-      <div class="container>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery + Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-inverse my_nav_bar">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">Tyler Creation</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#gadgets">Cool Gadgets</a></li>
+                <li><a href="#videos">Learn More about Doraemon</a></li>
+                <li><a href="#footer">Doraemon Merch!</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- Main Image -->
+<img src="doraemon-iphone-j72lx9h98b21konn.jpg" id="mainImg" class="img-responsive">
+
+<h1 class="text-center">Doraemon</h1>
+
+<!-- About -->
+<section id="aboutme" class="container">
+    <p>
+        MS-903 "Doraemon", or simply Doraemon, is the titular character of the Doraemon franchise.
+        Manufactured in the 22nd century, he was sent back in time by Sewashi Nobi to help Nobita Nobi
+        become successful and create a better future.
+    </p>
+
+    <p>
+        Doraemon loves Dorayaki, enjoys playing with other cats, and owns many magical gadgets from the future
+        that grant amazing powers and abilities.
+    </p>
+</section>
+
+<!-- Gadgets -->
+<section id="gadgets" class="container">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
         <ol class="carousel-indicators">
-          <li data-target ="#myCarousel" data-slide-to"0" class="active"></li>
-          <li data-target ="#myCarousel" data-slide-to"1" class="active"></li>
-          <li data-target ="#myCarousel" data-slide-to"2" class="active"></li>
-          <li data-target ="#myCarousel" data-slide-to"3" class="active"></li>
-          <li data-target ="#myCarousel" data-slide-to"4" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
         </ol>
+
+        <!-- Slides -->
         <div class="carousel-inner">
-        <div class="item active">
-          <img src="Doraemon Gadgets.png">
-        <div class="carousel-caption">
-      <p>Doraemon being from the future allows him to be able to store many useful, unique gadgets in his magical pouch like the Anywhere Door, Air Canon, Gulliver Tunnel, and Dress Up Camera. These are just some of his popular gadget as he has over 1 000 of them!</p>
+
+            <div class="item active">
+                <img src="Doraemon Gadgets.png" class="img-responsive">
+                <div class="carousel-caption">
+                    <p>Doraemon has over 1,000 useful gadgets stored in his magical pouch.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="AnywhereDoor.jpg" class="img-responsive">
+                <div class="carousel-caption">
+                    <p>The Anywhere Door lets users instantly travel anywhere.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="BamboHopter.webp" class="img-responsive">
+                <div class="carousel-caption">
+                    <p>The Bamboo Copter allows people to fly freely.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="BigLight.webp" class="img-responsive">
+                <div class="carousel-caption">
+                    <p>The Big Light enlarges objects or people.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="TranslationGummy.webp" class="img-responsive">
+                <div class="carousel-caption">
+                    <p>The Translation Gummy lets users understand any language.</p>
+                </div>
+            </div>
+
         </div>
-        </div>
-        <div class="item">
-          <img src="AnywhereDoor.jpg">
-          <div class="carousel-caption">
-            <p>The Anywhere Door (Dokodemo Door) is an iconic, pink teleportation gadget from the Doraemon anime/manga series, allowing users to instantly travel to any location by opening it. It operates by bypassing physical distance, with common constraints often limiting its reach to within 100,000 light-years</p>
-          </div>
-          </div>
-          <div class="item">
-            <img src="BamboHopter.webp">
-            <div class="carousel-caption">
-              <p>The Bamboo Copter (known as Take-copter in Japanese and The Hopter in some dubs) is one of Doraemon's most iconic 22nd-century gadgets. It is a small, yellow propeller-driven device with a suction cup that is placed on the head, allowing users to fly freely</p>
-            </div>
-          </div>
-          <div class="item">
-            <img src="BigLight.webp">
-            <div class="carousel-caption">
-              <p>The Big Light is a iconic flashlight-shaped gadget from Doraemon that enlarges objects or people when shined upon them. Often paired with the Small Light (which shrinks items), it is used to increase the size of items, such as toys, food, or characters, temporarily or permanently</p>
-            </div>
-          </div>
-          <div class="item">
-            <img src="TranslationGummy.webp">
-            <div class="carousel-caption">
-              <p>The Translation Gummy (known in Japanese as Honyaku Konnyaku or Translation Konjac) is a secret gadget from the Doraemon series. It is a magical, edible jelly that, when consumed, allows the user to instantly understand and speak any language in the universe, including alien languages and animal communication</p>
-            </div>
-          </div>
-          
-      </div>
-      </div>
-      </div>
-    </section>
-    
-    <section id="videos">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/09kVwEiQsi4?si=2y7kXKlwfPecahpF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </section>
-    
-    <section id="footer">
-      <p>Where to get my Merch</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.1193103726832!2d139.7758551!3d35.6247851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601889f9d36ebaa5%3A0x67f4219bfa09db77!2sDiverCity%20Tokyo%20Plaza!5e0!3m2!1sen!2sus!4v1774057924612!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-  </body>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
+    </div>
+</section>
+
+<!-- Video -->
+<section id="videos" class="container text-center">
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/09kVwEiQsi4"
+        title="YouTube video player"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+</section>
+
+<!-- Footer -->
+<section id="footer" class="container text-center">
+    <h3>Where to Get Doraemon Merch</h3>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.1193103726832!2d139.7758551!3d35.6247851!2m3!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601889f9d36ebaa5%3A0x67f4219bfa09db77!2sDiverCity%20Tokyo%20Plaza!5e0!3m2!1sen!2sus!4v1774057924612!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"> </iframe>
+
+</section>
+
+</body>
 </html>
