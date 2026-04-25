@@ -8,6 +8,7 @@
 }
 body {
   text-align: center;
+  color: #FFFFFF;
   background-color: #ccf2ff;
   font-family: "Carter One", system-ui;
   font-weight: 400;
@@ -34,6 +35,7 @@ body {
     left: 10%;
     right: 10%;
     bottom: 20px;
+    color: #000000;
 }
 
 /* Optional: center whole carousel */
